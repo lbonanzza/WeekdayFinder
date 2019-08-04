@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeekdayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday Finder" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlU-uu-0sy">
+                                <rect key="frame" x="73.5" y="64" width="267" height="51.5"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="39"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the day of the week " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C0-Ce-Xon">
+                                <rect key="frame" x="97.5" y="334" width="219" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="YDy-Hm-2Uf"/>
+                                    <constraint firstAttribute="width" constant="219" id="rIj-XR-M6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="24"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-lC-R4p">
+                                <rect key="frame" x="144" y="458" width="126" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="0vR-Cf-o80"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Find day">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findDay" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzr-jF-TgT"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-Iq-rht">
+                                <rect key="frame" x="16" y="181" width="382" height="136"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mdy-mi-xAy">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="136"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYU-T3-Bzr">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="32"/>
+                                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="24"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-4f-nPK">
+                                                <rect key="frame" x="0.0" y="52" width="65.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="24"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9c-3S-3p7">
+                                                <rect key="frame" x="0.0" y="104" width="45" height="32"/>
+                                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="24"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65.5" id="Gdz-46-EOM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-21-QHS">
+                                        <rect key="frame" x="80.5" y="0.0" width="301.5" height="136"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gG2-Yd-NY6">
+                                                <rect key="frame" x="0.0" y="0.0" width="301.5" height="32"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9e-9P-7Su">
+                                                <rect key="frame" x="0.0" y="52" width="301.5" height="32"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-vy-JUW">
+                                                <rect key="frame" x="0.0" y="104" width="301.5" height="32"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72643038169999996" green="0.520258789" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy6-Iq-rht" secondAttribute="trailing" constant="16" id="07U-C4-CaM"/>
+                            <constraint firstItem="nlU-uu-0sy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SHz-06-E25"/>
+                            <constraint firstItem="qy6-Iq-rht" firstAttribute="top" secondItem="nlU-uu-0sy" secondAttribute="bottom" constant="65.333333333333329" id="XRz-QA-ZjS"/>
+                            <constraint firstItem="wfO-lC-R4p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z0O-Zn-9gc"/>
+                            <constraint firstItem="1C0-Ce-Xon" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i4n-6Y-ubE"/>
+                            <constraint firstItem="wfO-lC-R4p" firstAttribute="top" secondItem="1C0-Ce-Xon" secondAttribute="bottom" constant="43" id="oV9-K0-f1Y"/>
+                            <constraint firstItem="nlU-uu-0sy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tE1-Hs-wdl"/>
+                            <constraint firstItem="qy6-Iq-rht" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="urv-bk-XID"/>
+                            <constraint firstItem="1C0-Ce-Xon" firstAttribute="top" secondItem="qy6-Iq-rht" secondAttribute="bottom" constant="17" id="vr7-0d-FLp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="gG2-Yd-NY6" id="qZ4-OX-tBR"/>
+                        <outlet property="monthTextField" destination="A9e-9P-7Su" id="nbN-7q-AZE"/>
+                        <outlet property="resultTextField" destination="1C0-Ce-Xon" id="rKX-6b-gz3"/>
+                        <outlet property="yearTextField" destination="UZu-vy-JUW" id="euk-sr-f4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
